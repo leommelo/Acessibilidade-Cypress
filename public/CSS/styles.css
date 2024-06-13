@@ -1,0 +1,453 @@
+body{
+    background-color: rgb(250, 250, 250);
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,"Helvetica Neue",Arial,"Noto Sans",sans-serif,"Apple Color Emoji","Segoe UI Emoji","Segoe UI Symbol","Noto Color Emoji";
+    margin: 0px;
+}
+
+
+.lista_glossario{
+    list-style: none; /* Remove os estilos de lista (bolinhas) */
+    padding-right: 35px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+li{
+    margin-bottom: 25px; /* Espaçamento entre os itens */
+}
+
+.negrito{
+    font-weight: bold;
+    color:black;
+}
+
+
+.principal{
+    background-color: rgb(44, 44, 122);
+    height: 90px;
+}
+
+.logout_form{
+    color: white;
+    display: inline;
+}
+
+.login_texto{
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
+    display: inline-flex;
+}
+
+.titulo_principal{
+    font-size: clamp(1rem, 2.5vw, 1.5rem);
+    margin: 0px;
+    color: white;
+    text-align: center;
+    padding: 10px;
+    margin-bottom: -2%;
+}
+
+.navigation{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav-list{
+    list-style: none;
+}
+
+.nav-link{
+    color: white;
+}
+
+
+
+.login{
+    font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
+    margin-right: 2%;
+    color: white;
+}
+
+
+
+
+/*SECTIONS DA PÁGINA*/
+.blocosDaPagina{
+    border: 1.5px solid rgb(207, 207, 207);
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.blocoDeDiretriz{
+    border: 1.5px solid rgb(207, 207, 207);
+    margin-top: 15px;
+    margin-right: 15px;
+    margin-bottom: 30px;
+}
+
+.blocoDeDiretriz h2{
+    margin-block-start: 0;
+    margin-bottom: 0px;
+    padding: 10px;
+    background-color: #eeeeee;
+}
+
+.tituloDiretriz h3{
+    margin-block-start: 0;
+    margin-bottom: 0px;
+    text-align:center;
+    padding-top: 0px;
+    padding-bottom: 10px;
+    padding-right: 35px;
+    padding-left: 35px;
+    font-weight: normal;
+    background-color: #eeeeee;
+    border-bottom: 1px solid rgb(170, 170, 170);
+}
+
+.pagina{
+    margin-left: 10%;
+    margin-right: 10%;
+}
+
+.blocosDaPagina h2{
+    margin-block-start: 0;
+    margin-bottom: 0px;
+    background-color: #eeeeee;
+    border: 1px solid rgb(207, 207, 207);
+}
+
+.conteudoBloco,
+.conteudoDiretriz,
+.conteudoGlossario{
+    padding-top: 16px;
+    padding-bottom: 7px;
+    background-color: white;
+    display: block;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+/*CAMPO DE BUSCA*/
+.form-control {
+    width: 80%;
+    height: calc(1.5em + 0.75rem + 2px);
+    padding: 0.375rem 0.75rem;
+    font-size: 1rem;
+    font-weight: 400;
+    line-height: 1.5;
+    color: #495057;
+    background-color: #fff;
+    background-clip: padding-box;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    margin-top: 5px;
+    margin-left: 20px;
+    margin-bottom: 25px;
+    margin-right: 5px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+/*ITENS DE UMA DIRETRIZ*/
+.tituloItem{
+    font-weight: normal;
+}
+
+.itensDiretrizes{
+    padding: 0.375rem 0.75rem;
+    background-color: #eeeeee;
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 0px;
+    margin-left: 15px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+}
+
+.itensDiretrizes h3{
+    margin-top: 5px;
+    margin-bottom: 5px;
+}
+
+.itensDiretrizes h4{
+    margin-top: 33px;
+    margin-bottom: 5px;
+}
+
+.itensDiretrizes p{
+    margin-top: 0px;
+    margin-bottom: 5px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+/*ASIDE, CONTÉM:
+    : LINKS PARA REALIZAR VERIFICAÇÃO, EDITAR, EXCLUIR 
+    DIV: BLOCO PARA INDICAR A SITUAÇÃO DO ITEM DA DIRETRIZ
+*/
+aside {
+    padding-right: 15px;
+    margin-left: 15px;
+    float: right;
+}
+
+.situacaoNaoAvaliado{
+    padding: 12px;
+    background-color: white;
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+    background-color: white;
+}
+.situacaonsa{
+    padding: 12px;
+    background-color: rgb(232, 255, 84);
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.situacaonao{
+    padding: 12px;
+    background-color: rgb(255, 84, 84);
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.situacaosim{
+    padding: 12px;
+    background-color: rgb(139, 255, 123);
+    border: 1px solid rgb(172, 172, 172);
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-bottom: 25px;
+}
+
+.opcoesVerificacao{
+    font-size: 1.10em;
+    text-align: right;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+/*BOTÕES E LINKS EM FORMA DE BOTÃO*/
+button{
+    cursor: pointer;
+    border-style: none;
+}
+
+.botaoLimparBusca{
+    font-size: 1rem;
+    background-color: rgb(44, 44, 122);
+    color:white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 16px;
+    text-decoration: none;
+    margin-bottom: 7px;
+    display: inline-block;
+}
+
+#botaoEfetuarBusca{
+    font-size: 1rem;
+    background-color: rgb(44, 44, 122);
+    color:white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 15px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+
+
+
+
+/*LÓGICA DA DIV CORRESPONDENTE AO "ORGANIZAR POR"*/
+.formularioFiltro{
+    font-size: 1.17em;
+    margin-top: 45px;
+    margin-bottom: 20px;
+}
+
+.formularioFiltro form{
+    display: inline;
+}
+
+.formularioFiltro p{
+    display: inline-block;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+#botaoExpandirEsconderTudo{
+    float: right;
+    font-size: 15px;
+    background-color: rgb(44, 44, 122);
+    color:white;
+    border: 1px solid #ced4da;
+    border-radius: 0.25rem;
+    padding: 9px;
+    display: block;
+    margin-right: 15px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+#fade{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.6);
+    z-index: 5;
+}
+
+#popup_titulo{
+    margin-bottom: 3%;
+    text-align: center;
+    margin-top: 0px;
+    width: 100%;
+    height: 30%;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    background-color: rgb(44, 44, 122);
+    color: white;
+}
+
+#modal{
+    text-align: center;
+    position: fixed;
+    left: 50%;
+    top:50%;
+    z-index: 10;
+    transform: translate(-50%,-50%);
+    background-color: #ced4da;
+    width: 425px;
+    height: 100px;
+    max-width: 90%;
+    border-radius: 10px;
+}
+
+
+/*ÍCONES GOOGLE*/
+.material-symbols-outlined{
+    display: inline-block;
+    vertical-align: middle;
+    font-size: 35px;
+}
+
+.imagens{
+    max-width: 100%;
+    max-height: 400px;
+    width: auto;
+    height: auto;
+
+}
+
+.botao_nao{
+    background-color: rgb(44, 44, 122);
+    color:rgb(255, 255, 255);
+    width: 20%;
+    height: 30%;
+    font-size: 100%;
+    border: solid rgb(38, 38, 38);
+
+}
+
+#modal,#fade{
+    transition: 0.5s;
+    opacity: 1;
+    pointer-events: all;
+}
+
+#modal.hide,#fade.hide{
+    opacity: 0;
+    pointer-events: none;
+}
+
+
+
+.info_erro{
+    text-align: center;
+}
+
+#remover{
+    background-color: red;
+    color:rgb(255, 255, 255);
+    width: 20%;
+    height: 30%;
+    font-size: 100%;
+    border: solid rgb(38, 38, 38);
+    
+}
+
+.linha_preta{
+    margin-top: 2%;
+}
+
+.botao_deletar{
+    cursor: pointer;
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 110%;
+    vertical-align: middle;
+    color: red;
+    text-decoration: underline
+}
+
+#botao_editar{
+    display: inline-block;
+    margin-bottom: 2px;
+    font-size: 150%;
+    vertical-align: middle;
+}
+
+
+#icon-search{
+    font-size: 20px;
+}
+
+#icon-realizarVerificacao{
+    font-size: 25px;
+}
+/* ----------------------------------------------------------------------------------- */
+
+.info_demanda{
+    margin: 1% 0%;
+}
+
+.text_info_demanda{
+    text-align: center;
+}
+
+.p_info_demanda{
+    padding: 10px;
+    font-size: 20px
+}
+
+.finalizar_demanda{
+    background-color: red;
+    color: white;
+    font-weight: 600;
+    font-size: 15px;
+    height: 50px;
+    width: 15%;
+    border: 3px solid black;
+    margin-left: 42%;
+    margin-top: 10px;
+}
