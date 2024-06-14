@@ -38,7 +38,9 @@ class AvaliacaoController extends Controller
         $metodo = $request->input('metodo');
         
         $paginas = array();
-        if($request->input('pgs')){
+
+        
+        if(isset($request->input('pgs')[$id])){
             $paginas = $request->input('pgs');
             $paginas = $paginas[$id];
         }
