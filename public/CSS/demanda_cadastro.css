@@ -118,9 +118,26 @@ form{
     margin-right: 0px;
 }
 
+.error{
+    color: rgb(175, 1, 1);
+    font-size: 80%;
+    font-weight: 500;
+    align-self: flex-start;
+    margin-left: 20%;
+    display: none;
+}
+
+.confirmar_senha{   
+    color: blue;
+    font-size:small;
+    font-weight: 600;
+    align-self: flex-start;
+    margin-left: 20%;
+}
+
 .botao_pagina{
     margin: 0px;
-    background-color: rgb(255, 0, 51);
+    background-color: rgb(3, 131, 28);
     color: white;
     font-weight: 600;
     border-radius: 5px;

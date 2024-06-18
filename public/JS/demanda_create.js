@@ -79,3 +79,21 @@ function atualizarInputsHidden() {
         form.appendChild(inputNomePagina);
     });
 }
+document.getElementById('meu_formulario').addEventListener('submit', function(event) {
+    // Obtenha os valores dos campos de senha e repetir senha
+    const senha = document.getElementById('senha').value;
+    const confirmarSenha = document.getElementById('confirmar_senha').value;
+
+    // Obtenha o elemento para exibir a mensagem de erro
+    const errorMessage = document.getElementById('error-message');
+
+    // Verifique se as senhas coincidem
+    if (senha !== confirmarSenha) {
+        // Se as senhas não coincidirem, previna o envio do formulário e exiba uma mensagem de erro
+        event.preventDefault();
+        errorMessage.style.display = 'inline';
+    } else {
+        // Se as senhas coincidirem, esconda a mensagem de erro (se houver)
+        errorMessage.style.display = 'none';
+    }
+});

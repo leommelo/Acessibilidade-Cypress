@@ -41,10 +41,11 @@
             </div>
             <div id="principal">
                 <div>
-                    <br><label>Páginas</label><br><br>
+                    <br><label class ="descricao_title">Páginas</label><br><br>
                     @foreach ($paginas as $key=>$pg)
                         <input type="checkbox" id="{{$key}}" name="pgs[]" value="{{$key}}"/>
-                            <label for="{{$key}}">{{$pg->pagina}}</label>
+                            <label class = "escrita_paginas" for="{{$key}}">{{$pg->pagina}}</label>
+                            <br>
                         @endforeach
                     @if(isset($pgs) and isset($tem_erro->em_cfmd) and $tem_erro->em_cfmd == "2")
                     <div class='anterior_quadrado'>
@@ -59,7 +60,7 @@
                     @endif
                 </div>
                 <div>
-                    <br><label>Descrição do Problema</label><br><br>
+                    <br><label class="descricao_title">Descrição do Problema</label><br><br>
                     <textarea name="descricao" class="descricao" type="text"></textarea>
                     @if(isset($tem_erro->descricao) and $tem_erro->em_cfmd == "2")
                     <div class='anterior_quadrado'>
@@ -73,7 +74,7 @@
                 </div>
 
                 <div class="imagens">
-                    <label for="image">Adicionar imagens do erro</label><br><br>
+                    <label class ="descricao_title" for="image">Adicionar imagens do erro</label><br><br>
                     <div id="imageUploadContainer">
                     </div>
                     <button type="button" onclick="addImageUpload()" class="adicionar_imagem">Adicionar Imagem</button>

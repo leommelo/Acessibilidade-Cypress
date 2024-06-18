@@ -9,16 +9,13 @@
 </head>
 <body>
     <div class="nav-bar">
-        <div class="sair">
             @auth
                 <form action="/logout" method="POST" class="logout_form">
                     @csrf
-                    <span class="material-symbols-outlined">logout</span>
-                    <a href="/logout" class="nav-link" onclick="event.preventDefault(); this.closest('form').submit();">Sair</a>
+                    {{$usuario->name}}
+                    <a href="/logout" class="nav-link" onclick="event.preventDefault(); this.closest('form').submit();"><span class="material-symbols-outlined">logout</span>Sair</a>
                 </form>
             @endauth
-        </div>
-        <p>{{$usuario->name}}</p>
     </div>
     <p class="titulo_demandas">Demandas</p>
 

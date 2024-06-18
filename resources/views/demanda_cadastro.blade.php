@@ -38,7 +38,10 @@
             </div>
             <div class="campo">
                 <label class="classificacao" for="senha">SENHA</label>
-                <input class="entrada" type="password" name="senha" placeholder="Digite a senha aqui...">
+                <input class="entrada" type="password" id="senha" name="senha" placeholder="Digite a senha aqui...">
+                <p class="confirmar_senha">CONFIRMAR SENHA</p>
+                <input class="entrada" type="password" id="confirmar_senha" name="senha" placeholder="Repita a senha aqui...">
+                <span id="error-message" class="error">*SENHA NÃO CONFERE</span>
             </div>
 
             <button class="botao_final" type="submit">ADICIONAR DEMANDA</button>

@@ -24,12 +24,12 @@ li{
 
 .principal{
     background-color: rgb(44, 44, 122);
-    height: 90px;
+    height: 6%;
+    padding: 4px;
 }
 
-.logout_form{
+.logout_form a{
     color: white;
-    display: inline;
 }
 
 .login_texto{
@@ -42,31 +42,21 @@ li{
     margin: 0px;
     color: white;
     text-align: center;
-    padding: 10px;
-    margin-bottom: -2%;
+    margin-bottom: -4px;
+
 }
 
 .navigation{
     display: flex;
     justify-content: space-between;
+    align-items: center;
 }
-
-.nav-list{
-    list-style: none;
-}
-
-.nav-link{
-    color: white;
-}
-
 
 
 .login{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
-    margin-right: 2%;
     color: white;
 }
-
 
 
 

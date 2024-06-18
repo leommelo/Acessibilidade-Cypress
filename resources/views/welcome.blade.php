@@ -14,17 +14,11 @@
     <header class="principal">
     <h1 class="titulo_principal">Adicionar erro de acessibilidade - Guiado</h1>
         <nav class="navigation">
-                <ul class = "nav-list">
-                    
-                    <li class="nav-item">
                         <form action="/logout" method="POST" class="logout_form">
                             @csrf
-                            <span class="material-symbols-outlined">logout</span>
-                            <a href="/" class="nav-link">Ir para Demandas</a>
+                            <a href="/" class="nav-link">
+                            <span class="material-symbols-outlined">logout</span>Demandas</a>
                         </form>
-                    </li>
-                </ul>
-            
             <div class="login">
                 <span class="material-symbols-outlined">person</span>
                 <p class="login_texto">{{$usuario->name}}</p>
