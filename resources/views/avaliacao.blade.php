@@ -66,7 +66,7 @@
                     <div class='anterior_quadrado'>
                         <p class="descricao_atual">Descrição atual</p>
                         <div class="anterior">
-                            <p class="erro_atual">{{$tem_erro->descricao}}</p>
+                            <p class="erro_atual">{!!nl2br($tem_erro->descricao)!!}</p>
                         </div>
                     </div>
 
