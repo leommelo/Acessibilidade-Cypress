@@ -26,7 +26,7 @@ class DemandaController extends Controller
 
         if($demanda->password == $request->input('password')){
 
-            Cookie::queue('demanda_authenticated', $demanda->id, 5);
+            Cookie::queue('demanda_authenticated', $demanda->id, 240);
 
             // Retorne uma view de sucesso
             return redirect()->route('index.mostrar');
