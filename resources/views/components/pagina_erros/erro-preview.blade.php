@@ -6,7 +6,7 @@
                 </div>
                 <hr class="linha_preta">
                 <h4>Descrição do erro</h4>
-                {{$tem_erro["$itemChecklist->id"]->descricao}}
+                {!! nl2br($tem_erro["$itemChecklist->id"]->descricao) !!}
                 <hr class="linha_preta">
                 <h4>Páginas</h4>
                 @foreach ($pgs["$itemChecklist->id"] as $paginas)
