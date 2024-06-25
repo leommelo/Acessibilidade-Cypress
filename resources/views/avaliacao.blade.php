@@ -61,7 +61,7 @@
                 </div>
                 <div>
                     <br><label class="descricao_title">Descrição do Problema</label><br><br>
-                    <textarea name="descricao" class="descricao" type="text"></textarea>
+                    <textarea name="descricao" required="true" class="descricao" type="text"></textarea>
                     @if(isset($tem_erro->descricao) and $tem_erro->em_cfmd == "2")
                     <div class='anterior_quadrado'>
                         <p class="descricao_atual">Descrição atual</p>
