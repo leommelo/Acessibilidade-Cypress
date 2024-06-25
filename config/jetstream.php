@@ -5,6 +5,7 @@ use Laravel\Jetstream\Http\Middleware\AuthenticateSession;
 
 return [
 
+    'home' => '/',
     /*
     |--------------------------------------------------------------------------
     | Jetstream Stack
