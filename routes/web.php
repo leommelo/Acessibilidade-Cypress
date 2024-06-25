@@ -26,10 +26,7 @@ Route::middleware([
     config('jetstream.auth_session'),
     'verified',
 ])->group(function () {
-    
-    Route::get('/dashboard', function () {
-        return redirect()->route('demanda.mostrar');
-    });
+
 
     Route::get('/erro/{id}', [AvaliacaoController::class,'index'])->name('erro.mostrar');
 
