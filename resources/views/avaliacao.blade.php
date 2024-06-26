@@ -25,7 +25,7 @@
             </div>
         </div>
         <br>
-        <form method="POST" action=" {{route($rota,['id' =>  $id ,'id_demanda' =>$id_demanda])}} " enctype="multipart/form-data">
+        <form method="POST" action=" {{route($rota,['id' =>  $id ,'id_demanda' =>$id_demanda])}} " id="myForm" enctype="multipart/form-data">
             @method($metodo)
             @csrf
             <div class="container_1">
@@ -61,7 +61,7 @@
                 </div>
                 <div>
                     <br><label class="descricao_title">Descrição do Problema</label><br><br>
-                    <textarea name="descricao" required="true" class="descricao" type="text"></textarea>
+                    <textarea name="descricao" class="descricao" id="descricao" type="text"></textarea>
                     @if(isset($tem_erro->descricao) and $tem_erro->em_cfmd == "2")
                     <div class='anterior_quadrado'>
                         <p class="descricao_atual">Descrição atual</p>
@@ -93,7 +93,7 @@
                 @endif
             </div>
 
-            <button class="botao_envio" type="submit">Enviar Avaliação</button>
+            <button class="botao_envio" onclick="validateForm()" id="botao_submition"type="submit">Enviar Avaliação</button>
         </form>
     </div>
     </div>

@@ -39,6 +39,8 @@ document.addEventListener('DOMContentLoaded', function() {
         var conteudo = document.getElementById('principal');
         
         if (opcaoSelecionada === "2") {
+            descricao = document.getElementById('descricao');
+            descricao.required = true;
             conteudo.style.display = 'block'; // Mostra o conteúdo se a opção "Sim" for selecionada
         } else {
             conteudo.style.display = 'none'; // Esconde o conteúdo para as outras opções
@@ -54,3 +56,26 @@ document.addEventListener('DOMContentLoaded', function() {
     // Chama a função para definir a visibilidade inicial
     atualizarConteudo();
 });
+
+
+document.getElementById('myForm').addEventListener('submit', function(event) {
+    var opcaoSelecionada = document.querySelector('input[name="opcao"]:checked').value;
+    if (opcaoSelecionada === "2") {
+        var checkboxes = document.querySelectorAll('input[name="pgs[]"]');
+        var isChecked = false;
+
+        for (var i = 0; i < checkboxes.length; i++) {
+            if (checkboxes[i].checked) {
+                isChecked = true;
+                break;
+            }
+        }
+
+        if (!isChecked) {
+            event.preventDefault();
+            alert("Por favor, selecione pelo menos uma opção de página.");
+        }
+    }
+});
+
+
