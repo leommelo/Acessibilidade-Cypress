@@ -23,10 +23,14 @@ li{
 
 
 .principal{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     background-color: rgb(44, 44, 122);
     height: 6%;
     padding: 4px;
 }
+
 
 .logout_form a{
     color: white;
@@ -35,6 +39,7 @@ li{
 .login_texto{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
     display: inline-flex;
+    font-weight: 500;
 }
 
 .titulo_principal{
@@ -55,7 +60,7 @@ li{
 
 .login{
     font-size: clamp(0.8rem, 2.5vw, 1.2rem); 
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 
@@ -100,7 +105,12 @@ li{
     margin-right: 10%;
 }
 
+
+
 .blocosDaPagina h2{
+    padding: 10px;
+    display: flex;
+    align-items: center;
     margin-block-start: 0;
     margin-bottom: 0px;
     background-color: #eeeeee;
@@ -341,6 +351,20 @@ button{
     font-size: 35px;
 }
 
+.botoes{
+    padding: 20px;
+    display: flex;
+    justify-content: space-around;
+}
+
+.voltar_demanda{
+    background-color: blue;
+    color: white;
+    border: 3px solid black;
+    font-weight: 600;
+    height: 50px;
+}
+
 .imagens{
     max-width: 100%;
     max-height: 400px;
@@ -421,6 +445,15 @@ button{
     margin: 1% 0%;
 }
 
+.opcoes_escrita{
+    font-weight: 500;
+    font-size: 20px;
+    padding: 3px;
+    text-align: center;
+    background-color: #eeeeee;
+    border: 0.5px solid rgb(154, 154, 154);
+}
+
 .text_info_demanda{
     text-align: center;
 }
@@ -438,6 +471,4 @@ button{
     height: 50px;
     width: 15%;
     border: 3px solid black;
-    margin-left: 42%;
-    margin-top: 10px;
 }

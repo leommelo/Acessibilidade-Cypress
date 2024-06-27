@@ -1,7 +1,12 @@
-@props(['demanda'])
+@props(['demanda','usuario'])
 <div class="info_demanda">
     <p class="p_info_demanda">{{$demanda->descricao}}</p>
-    <h2 class="text_info_demanda">Opções</h2>
-    <button class="finalizar_demanda">Finalizar Demanda</button>
-
+    <p class="opcoes_escrita">Opções</p>
+    <div class="botoes">
+        <form action="{{route('demanda.mostrar')}}" class="logout_form">
+            @csrf
+            <button class="voltar_demanda"> <span class="material-symbols-outlined">logout</span>Voltar para demandas</button>
+        </form>
+        <button class="finalizar_demanda">Finalizar Demanda</button>
+    </div>
 </div>

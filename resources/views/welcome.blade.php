@@ -13,25 +13,16 @@
 <body>
     <header class="principal">
     <h1 class="titulo_principal">Adicionar erro de acessibilidade - Guiado</h1>
-        <nav class="navigation">
-                        <form action="/logout" method="POST" class="logout_form">
-                            @csrf
-                            <a href="/" class="nav-link">
-                            <span class="material-symbols-outlined">logout</span>Demandas</a>
-                        </form>
-            <div class="login">
-                <span class="material-symbols-outlined">person</span>
-                <p class="login_texto">{{$usuario->name}}</p>
-            </div>
-        </nav>
-        
+    <div class="login">
+                <p class="login_texto">Avaliador: {{$usuario->name}}</p>
+    </div>
     </header>
 
 
 <div class="pagina">
     <section class="blocosDaPagina">
-    <h2><button type="button" class="botaoExpandirOcultarGlossario"><span class="material-symbols-outlined">expand_less</span></button>{{$demanda->nome}}</h2>
-        @component('components.demandas.demanda-ver',['demanda' => $demanda])
+    <h2><button type="button" class="botaoExpandirOcultarDemanda" onclick="demanda_expandir()" id = "expandir_demanda"><span class="material-symbols-outlined">expand_less</span></button>Demanda: {{$demanda->nome}}</h2>
+        @component('components.demandas.demanda-ver',['demanda' => $demanda,'usuario' => $usuario])
         @endcomponent
     </section>
     

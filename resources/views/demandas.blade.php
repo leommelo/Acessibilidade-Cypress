@@ -10,6 +10,7 @@
 <body>
     <div class="nav-bar">
             @auth
+            <h1>Nome da Ferramenta</h1>
                 <form action="/logout" method="POST" class="logout_form">
                     @csrf
                     {{$usuario->name}}
