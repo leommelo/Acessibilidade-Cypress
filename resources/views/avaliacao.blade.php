@@ -25,6 +25,8 @@
             </div>
         </div>
         <br>
+        <p id="teste" style="display: none;">{{$metodo}}</p>
+        @if(isset($tem_erro->em_cfmd))<p id="teste1" style="display: none;">{{$tem_erro->em_cfmd}}</p>@endif
         <form method="POST" action=" {{route($rota,['id' =>  $id ,'id_demanda' =>$id_demanda])}} " id="myForm" enctype="multipart/form-data">
             @method($metodo)
             @csrf

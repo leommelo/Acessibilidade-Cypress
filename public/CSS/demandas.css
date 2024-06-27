@@ -7,16 +7,25 @@ body{
 }
 
 
+.nav-link{
+    color: red;
+}
 
+.nav-bar h1{
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    color: white;
+}
 
 .nav-bar{
-    height: 40px;
+    height: 60px;
     display: flex;
-    justify-content: flex-end;
     align-items: center;
     width: 100%;
     font-weight: bold;
     color:rgb(0, 8, 123);
+    background-color: #120F3B
 }
 
 .nav-bar a{
@@ -28,16 +37,17 @@ body{
 }
 
 .logout_form{
+    margin-left: auto;
     display: flex;
     align-items:center;
-    justify-content: end;
     gap: 7px;
+    color: white;
 }
 
 .titulo_demandas{
     height: 60px;
     margin-bottom: 10px;
-    margin-top: 10px;
+    margin-top: 0px;
     margin-left: 0px;
     margin-right: 0px;
     background-color: rgb(74, 74, 74);
@@ -72,6 +82,10 @@ body{
 }
 
 @media (max-width: 1000px) {
+    .nav-bar h1{
+        display: none;
+    }
+
     .row{
         gap: 3%;
         justify-content: baseline;
@@ -157,4 +171,5 @@ body{
 
 .material-symbols-outlined{
     margin: 0px;
+    color: red;
 }

@@ -102,6 +102,19 @@ ocultarExibirConteudo('.botaoExpandirOcultarGlossario');
 ocultarExibirTodasDiretrizes();
 });
 
+function demanda_expandir(){
+    info_demanda = document.querySelectorAll('.info_demanda');
+    botao = document.getElementById('expandir_demanda');
+    if(info_demanda[0].style.display == 'none'){
+        botao.innerHTML = "<span class='material-symbols-outlined'>expand_less</span>";
+        info_demanda[0].style.display = 'block';
+    }
+    else{
+        botao.innerHTML = "<span class='material-symbols-outlined'>expand_more</span>";
+        info_demanda[0].style.display = 'none';
+    }
+}
+
 
 const openModalButtons = document.querySelectorAll('.open-modal');
     const closeModalButton = document.querySelector('#close-modal');

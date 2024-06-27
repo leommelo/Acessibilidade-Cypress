@@ -40,7 +40,11 @@ document.addEventListener('DOMContentLoaded', function() {
         
         if (opcaoSelecionada === "2") {
             descricao = document.getElementById('descricao');
-            descricao.required = true;
+            var metodo = document.getElementById("teste");
+            var em_cfmd = document.getElementById("teste1");
+            if ((opcaoSelecionada === "2" && metodo.textContent !== "PUT") || (metodo.textContent == 'PUT' && em_cfmd.textContent !== '2')) {
+                descricao.required = true;
+            }
             conteudo.style.display = 'block'; // Mostra o conteúdo se a opção "Sim" for selecionada
         } else {
             conteudo.style.display = 'none'; // Esconde o conteúdo para as outras opções
@@ -60,7 +64,9 @@ document.addEventListener('DOMContentLoaded', function() {
 
 document.getElementById('myForm').addEventListener('submit', function(event) {
     var opcaoSelecionada = document.querySelector('input[name="opcao"]:checked').value;
-    if (opcaoSelecionada === "2") {
+    var metodo = document.getElementById("teste");
+    var em_cfmd = document.getElementById("teste1");
+    if ((opcaoSelecionada === "2" && metodo.textContent !== "PUT") || (metodo.textContent == 'PUT' && em_cfmd.textContent !== '2')) {
         var checkboxes = document.querySelectorAll('input[name="pgs[]"]');
         var isChecked = false;
 
