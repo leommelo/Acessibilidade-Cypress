@@ -48,10 +48,6 @@ Abra o workbench, crie uma conexão e execute o código “create database larav
 
  
 
-Link para clonar o projeto: https://github.com/Ferreira327/acessibilidade.git 
-
- 
-
 ## Com o projeto clonado... 
 
 1. No terminal aberto no projeto dê o comando `composer i` para a instalação do composer; 
