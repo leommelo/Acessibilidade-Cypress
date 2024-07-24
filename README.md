@@ -22,11 +22,10 @@ Primeiramente, é preciso instalar os seguintes softwares em sua máquina.
 - [Composer](https://getcomposer.org/download/ ) 
 
 
-MySQL workbench 
+- [MySQL workbench](https://www.mysql.com/products/workbench/ ) 
 
-https://www.mysql.com/products/workbench/ 
 
-Todos os softwares podem ser instalados da forma padrão como é recomendado, ou também seguindo suas próprias preferências. 
+*Todos os softwares podem ser instalados da forma padrão como é recomendado, ou também seguindo suas próprias preferências.* 
 
  
 
