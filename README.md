@@ -80,4 +80,6 @@ Link para clonar o projeto: https://github.com/Ferreira327/acessibilidade.git
 
 # Preparando o ambiente para os testes
 
-> :construction: Projeto em construção :construction:
+<h4 align="center"> 
+    :construction:  Projeto em construção  :construction:
+</h4>
