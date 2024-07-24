@@ -9,8 +9,7 @@ O projeto base é um site onde são realizados avaliações acerca de acessibili
 * [Como rodar o projeto localmente](#Como-rodar-o-projeto-localmente)
 * [Preparando o ambiente para os testes](#Preparando-o-ambiente-para-os-testes)
 
-<h1>Como rodar o projeto localmente<h1>
-
+# Como rodar o projeto localmente
 Primeiramente, é preciso instalar os seguintes softwares em sua máquina. 
 
 - [NodeJs](https://nodejs.org/en)
@@ -29,7 +28,7 @@ Primeiramente, é preciso instalar os seguintes softwares em sua máquina.
 
  
 
-<h2>Alteração necessária no xampp <h2>
+## Alteração necessária no xampp 
 
 Após a instalação do mesmo, será necessário abrir a sua pasta de instalação e procurar a pasta “php” (possivelmente no endereço “C:\xampp\php”). Procure o arquivo também chamado “php” do tipo “parâmetro de configuração” e o abra com algum programa de editor de texto (como bloco de notas). 
 
@@ -37,13 +36,13 @@ Ache o texto “;extension=zip” e exclua o “;” que precede o “extension�
 
  
 
--  Xampp 
+### Xampp 
 
 Abra o xampp e dê “start” no “MySQL”. 
 
  
 
--  MySQL Workbench
+### MySQL Workbench
 
 Abra o workbench, crie uma conexão e execute o código “create database laravel” 
 
@@ -53,7 +52,7 @@ Link para clonar o projeto: https://github.com/Ferreira327/acessibilidade.git
 
  
 
-<h2>Com o projeto clonado... <h2>
+## Com o projeto clonado... 
 
 1. No terminal aberto no projeto dê o comando `composer i` para a instalação do composer; 
 
