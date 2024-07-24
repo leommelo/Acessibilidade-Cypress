@@ -4,7 +4,7 @@
 <img loading="lazy" src="http://img.shields.io/static/v1?label=STATUS&message=EM%20DESENVOLVIMENTO&color=GREEN&style=for-the-badge"/>
 </p>
 
-<p fontsize= "10px">O projeto base é um site onde são realizados avaliações acerca de acessibilidade de outros sites. A extensão desse, existe testes End-to-End acima do projeto realizados em cypress.<p>
+O projeto base é um site onde são realizados avaliações acerca de acessibilidade de outros sites. A extensão desse, existe testes End-to-End acima do projeto realizados em cypress.
 
 * [Como rodar o projeto localmente](#Como-rodar-o-projeto-localmente)
 * [Preparando o ambiente para os testes](#Preparando-o-ambiente-para-os-testes)
@@ -13,17 +13,14 @@
 
 Primeiramente, é preciso instalar os seguintes softwares em sua máquina. 
 
-NodeJs 
+- [NodeJs](https://nodejs.org/en)
 
-https://nodejs.org/en 
 
-Xampp 
+- [Xampp](https://www.apachefriends.org/pt_br/index.html) 
 
-https://www.apachefriends.org/pt_br/index.html 
 
-Composer 
+- [Composer](https://getcomposer.org/download/ ) 
 
-https://getcomposer.org/download/ 
 
 MySQL workbench 
 
