@@ -37,13 +37,13 @@ Ache o texto “;extension=zip” e exclua o “;” que precede o “extension�
 
  
 
-<h3> Xampp <h3>
+-  Xampp 
 
 Abra o xampp e dê “start” no “MySQL”. 
 
  
 
-<h3> MySQL Workbench <h3>
+-  MySQL Workbench
 
 Abra o workbench, crie uma conexão e execute o código “create database laravel” 
 
