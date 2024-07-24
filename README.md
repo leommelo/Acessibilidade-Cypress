@@ -76,4 +76,8 @@ Link para clonar o projeto: https://github.com/Ferreira327/acessibilidade.git
 
    -`php artisan serve`
 
-9. Agora abra o MySQL Workbench e execute o código que está no arquivo “Inserir itens no Banco”, basta copiar o texto. 
+9. Agora abra o MySQL Workbench e execute o código que está no arquivo “Inserir itens no Banco”, basta copiar o texto.
+
+# Preparando o ambiente para os testes
+
+> :construction: Projeto em construção :construction:
