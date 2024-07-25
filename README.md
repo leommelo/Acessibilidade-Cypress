@@ -6,7 +6,7 @@
 
 Este projeto consiste em um site que realiza avaliações de acessibilidade em outras páginas da web. Além disso, inclui testes End-to-End utilizando *Cypress* para garantir a funcionalidade e a usabilidade do sistema.
 
-* [Como rodar o projeto localmente](#Como-rodar-o-projeto-localmente)
+* [Como rodar o projeto localmente](#:computer:-Como-rodar-o-projeto-localmente)
 * [Como realizar os testes através do Cypress](#🛠️-Como-realizar-os-testes-através-do-Cypress)
 
 # :computer: Como rodar o projeto localmente
