@@ -97,3 +97,4 @@ Para abrir o cypress dê o comando:
    - Editar o código do teste clicando no nome da spec(teste) onde aparece a opção "open in IDL"
    - Ver e analisar cada passo do teste, tanto os sucessos quanto as falhas
 
+> Lembre se, sempre que quiser realizar os testes, terá que seguir esses passos :smile:
