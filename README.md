@@ -7,7 +7,7 @@
 Este projeto consiste em um site que realiza avaliações de acessibilidade em outras páginas da web. Além disso, inclui testes End-to-End utilizando *Cypress* para garantir a funcionalidade e a usabilidade do sistema.
 
 * [Como rodar o projeto localmente](#-como-rodar-o-projeto-localmente)
-* [Como realizar os testes através do Cypress](#-como-realizar-os-testes-atraves-do-cypress)
+* [Como realizar os testes atraves do Cypress](#como-realizar-os-testes-atraves-do-cypress)
 
 # 💻 Como rodar o projeto localmente
 Primeiramente, é preciso instalar os seguintes softwares em sua máquina. 
@@ -74,8 +74,8 @@ Abra o workbench, crie uma conexão e execute o código “create database larav
 
 9. Agora abra o MySQL Workbench e execute o código que está no arquivo “Inserir itens no Banco”, basta copiar o texto.
 
-# 🛠️ Como realizar os testes atraves do cypress
-## Preparando o ambiente para os testes
+# Como realizar os testes atraves do cypress
+## 🛠️ Preparando o ambiente para os testes
 
 Primeiramente, é preciso instalar os seguintes softwares em sua máquina. 
 
@@ -83,7 +83,7 @@ Primeiramente, é preciso instalar os seguintes softwares em sua máquina.
 
 *Todos os softwares podem ser instalados da forma padrão como é recomendado, ou também seguindo suas próprias preferências.* 
 
-## Abrindo o Cypress
+## 🔍 Abrindo o Cypress
 
 Não é necessário instalar o cypress, visto que já está instalado no projeto. Portanto, com intuito didático, caso queira instalar o cypress em algum projeto próprio, é capaz de fazê-lo via npm pelo comando: `npm install cypress --save-dev`
 
