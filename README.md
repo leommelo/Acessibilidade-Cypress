@@ -74,7 +74,7 @@ Abra o workbench, crie uma conexão e execute o código “create database larav
 
 9. Agora abra o MySQL Workbench e execute o código que está no arquivo “Inserir itens no Banco”, basta copiar o texto.
 
-# 🛠️ Como realizar os testes através do Cypress
+# 🛠️ Como realizar os testes atraves do cypress
 ## Preparando o ambiente para os testes
 
 Primeiramente, é preciso instalar os seguintes softwares em sua máquina. 
