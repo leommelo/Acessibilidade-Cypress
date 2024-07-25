@@ -88,11 +88,11 @@ Primeiramente, é preciso instalar os seguintes softwares em sua máquina.
 Não é necessário instalar o cypress, visto que já está instalado no projeto. Portanto, com intuito didático, caso queira instalar o cypress em algum projeto próprio, é capaz de fazê-lo via npm pelo comando: `npm install cypress --save-dev`
 
 Para abrir o cypress dê o comando: 
-1- `npx cypress open` 
-2- Abrirá uma janela com duas opções, escolha "E2E Testing"
-3- Selecione o navegador de sua preferência
-4- Terão alguns testes dentro da pasta "*cypress\e2e*", escolha de acordo com sua necessidade
-5- Após abrir o teste desejado, ele automaticamente irá realizá-lo, a partir disso você pode:
+1. `npx cypress open` 
+2. Abrirá uma janela com duas opções, escolha "E2E Testing"
+3. Selecione o navegador de sua preferência
+4. Terão alguns testes dentro da pasta "*cypress\e2e*", escolha de acordo com sua necessidade
+5. Após abrir o teste desejado, ele automaticamente irá realizá-lo, a partir disso você pode:
    - Repetir o teste clicando no botão de "Reload"
    - Editar o código do teste clicando no nome da spec(teste) onde aparece a opção "open in IDL"
    - Ver e analisar cada passo do teste, tanto os sucessos quanto as falhas
