@@ -42,7 +42,7 @@ document.addEventListener('DOMContentLoaded', function() {
             descricao = document.getElementById('descricao');
             var metodo = document.getElementById("teste");
             var em_cfmd = document.getElementById("teste1");
-            if ((opcaoSelecionada === "2" && metodo.textContent !== "PUT") || (metodo.textContent == 'PUT' && em_cfmd.textContent !== '2')) {
+            if ((opcaoSelecionada === "2" && metodo.textContent !== "PUT") || (metodo.textContent == 'PUT' && em_cfmd.textContent == '2')) {
                 descricao.required = true;
             }
             conteudo.style.display = 'block'; // Mostra o conteúdo se a opção "Sim" for selecionada
@@ -77,7 +77,7 @@ document.getElementById('myForm').addEventListener('submit', function(event) {
             }
         }
 
-        if (!isChecked) {
+        if (!isChecked && em_cfmd.textContent == '2') {
             event.preventDefault();
             alert("Por favor, selecione pelo menos uma opção de página.");
         }
