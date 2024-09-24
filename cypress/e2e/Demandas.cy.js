@@ -25,6 +25,15 @@ describe('Criação e acesso de uma demanda', () => {
     cy.contains('Log in').click()
 
     cy.get('input[name="password"]').eq(0).type('12345678')
-    cy.get('.button')
+    console.log('chegou na senha')
+    if (cy.get('.button').first()) {
+      console.log('chegou no primeiro botão')
+      cy.get('.button').first().click()
+     } else {
+       console.log('Não existe um botão com a classe button no código')
+     }
+     if(cy.get('.finalizar-demanda')){
+        console.log('Chegou na pagina da demanda')
+     }
   })
 })
